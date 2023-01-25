@@ -57,21 +57,15 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.section-img-only {
-  padding-bottom: 120px;
-}
-.wrap {
-  flex-wrap: wrap;
-  margin-top: 72px;
-  row-gap: 48px;
-}
+
 .img {
   display: block;
   height: auto;
 }
 /*========================/UTILITY====================*/
 
-/*========================LOGO====================*/
+
+/*========================HEADER====================*/
 .logo {
   font-family: "Raleway";
   font-weight: 800;
@@ -87,9 +81,6 @@ button {
 .accent-light {
   color: var(--main-light-color);
 }
-/*========================/LOGO====================*/
-
-/*========================NAVIGATION====================*/
 .header {
   border-bottom: 1px solid #e7e9fc;
   padding: 24px 0;
@@ -123,7 +114,7 @@ button {
   content: "";
   position: absolute;
   display: block;
-  top: 42px;
+  top: 43px;
   width: 100%;
   height: 4px;
   background: #404bbf;
@@ -154,7 +145,38 @@ button {
 .contact-item-link:focus {
   color: var(--color-hover-effect);
 }
-/*========================/NAVIGATION====================*/
+/*========================/HEADER====================*/
+
+/*========================TEXT STYLE====================*/
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  /* padding-top: 120px; */
+
+  color: var(--main-dark-color);
+}
+
+.list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: var(--main-dark-color);
+  margin-bottom: 8px;
+}
+.text {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+
+/*========================/TEXT STYLE====================*/
+
+/*========================PAGE STUDIO====================*/
+/*========================PAGE STUDIO====================*/
 
 /*========================HERO====================*/
 
@@ -207,135 +229,28 @@ button {
 }
 /*========================/HERO====================*/
 
-/*========================TEXT STYLE====================*/
 
-.title {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: calc(40 / 36);
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-  /* padding-top: 120px; */
-
-  color: var(--main-dark-color);
-}
-
-.list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  color: var(--main-dark-color);
-  margin-bottom: 8px;
-}
-.text {
-  font-size: 16px;
-  line-height: calc(24 / 16);
-}
-
-/*========================/TEXT STYLE====================*/
-
-/*========================FILTER====================*/
-.filter {
-  padding-top: 100px;
-  padding-bottom: 120px;
-}
-
-.filter-list {
-  justify-content: center;
-}
-.btn-filter {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: var(--main-light-color);
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 12px 24px;
-  transition: background-color var(--transition-func),
-    color var(--transition-func), box-shadow var(--transition-func);
-}
-.btn-filter:hover,
-.btn-filter:focus {
-  background-color: var(--color-hover-effect);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.text-filter-card {
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  border: 1px solid #e7e9fc;
-  border-top: 0;
-}
-.work-thumb {
-  position: relative;
-  overflow: hidden;
-}
-.overlay {
-  padding-top: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4d5ae5;
-  transform: translateY(100%);
-  transition: transform var(--transition-func);
-  overflow-y: scroll;
-}
-.overlay-text {
-  text-align: center;
-  color: #f4f4fd;
-  font-size: 16px;
-  line-height: calc(24 / 16);
-}
-/*========================/FILTER====================*/
-
-/*========================FOOTER====================*/
-.footer {
-  background-color: var(--main-dark-color);
-  padding: 100px 0;
-}
-.footer-color-text {
-  margin-top: 16px;
-  color: #e7e9fc;
-  width: 264px;
-}
-.media {
-  color: #fff;
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-.footer-container {
-  display: flex;
-}
-.footer-icon-container {
+/*========================ASTRONAUT====================*/
+.big-svg-link {
+  background-color: #f4f4fd;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--main-light-color);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  transition: background-color var(--transition-func);
+  height: 112px;
+  width: 264px;
+  margin-bottom: 8px;
 }
-.footer-icon-container:hover,
-.footer-icon-container:focus {
-  background-color: #31d0aa;
+.big-svg{
+  width: 64px;
+  height: 64px;
 }
-.social-media {
-  margin-left: 120px;
+/*========================/ASTRONAUT====================*/
+
+/*========================SECTION-IMG====================*/
+.section-img-only {
+  padding-bottom: 120px;
 }
-/*========================/FOOTER====================*/
+/*========================/SECTION-IMG====================*/
 
 /*========================TEAM CARD====================*/
 .team-card-bg {
@@ -348,44 +263,11 @@ button {
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
 }
-.team-card-svg {
-  width: 16px;
-  height: 16px;
-}
-
 .team-card-text {
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
 }
-.card-filter {
-  flex-basis: calc((100% - 96px) / 3);
-  cursor: pointer;
-  border: 0.5px solid #f4f4fd;
-  transition: box-shadow var(--transition-func);
-}
-.card-filter:hover,
-.card-filter:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.card-filter-link:hover .overlay,
-.card-filter-link:focus .overlay {
-  transform: translate(0, 0);
-}
-/*========================/TEAM CARD====================*/
-
-/*========================SVG====================*/
-.big-svg {
-  background-color: #f4f4fd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  width: 264px;
-  margin-bottom: 8px;
-}
-
 .list-icon {
   justify-content: center;
   margin-top: 8px;
@@ -405,6 +287,17 @@ button {
 .icon-container:focus {
   background-color: #404bbf;
 }
+.team-card-svg {
+  width: 16px;
+  height: 16px;
+}
+
+/*========================/TEAM CARD====================*/
+
+
+
+/*========================CUSTOMERS====================*/
+
 .list-client {
   margin: 0 auto;
 }
@@ -430,11 +323,52 @@ button {
   width: 104px;
   transition: fill var(--transition-func);
 }
+/*========================/CUSTOMERS====================*/
+
+/*========================FOOTER====================*/
+.footer {
+  background-color: var(--main-dark-color);
+  padding: 100px 0;
+}
+.footer-container {
+  display: flex;
+}
+.footer-color-text {
+  margin-top: 16px;
+  color: #e7e9fc;
+  width: 264px;
+}
+.social-media {
+  margin-left: 120px;
+}
+.media {
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-light-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: background-color var(--transition-func);
+}
+.footer-icon-container:hover,
+.footer-icon-container:focus {
+  background-color: #31d0aa;
+}
 .footer-svg {
   height: 24px;
   width: 24px;
 }
-/*========================/SVG====================*/
+/*========================/FOOTER====================*/
 
 /*========================MODAL WINDOW====================*/
 .backdrop {
@@ -469,11 +403,6 @@ button {
   opacity: 0;
   pointer-events: none;
 }
-.svg-close {
-  height: 8px;
-  width: 8px;
-  transition: fill var(--transition-func);
-}
 .btn-modal-close {
   position: absolute;
   top: 24px;
@@ -496,4 +425,108 @@ button {
 .btn-modal-close:focus .svg-close {
   fill: #fff;
 }
+.svg-close {
+  height: 8px;
+  width: 8px;
+  transition: fill var(--transition-func);
+}
+
 /*========================/MODAL WINDOW====================*/
+
+/*========================/PAGE STUDIO====================*/
+/*========================/PAGE STUDIO====================*/
+
+
+/*========================PAGE PORTFOLIO====================*/
+/*========================PAGE PORTFOLIO====================*/
+
+/*========================FILTER====================*/
+.filter {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.filter-list {
+  justify-content: center;
+}
+.btn-filter {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: var(--main-light-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: background-color var(--transition-func),
+    color var(--transition-func), box-shadow var(--transition-func),
+    border-color var(--transition-func);
+}
+.btn-filter:hover,
+.btn-filter:focus {
+  background-color: var(--color-hover-effect);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: #4d5ae5;
+}
+.wrap {
+  flex-wrap: wrap;
+  margin-top: 72px;
+  row-gap: 48px;
+}
+.card-filter {
+  flex-basis: calc((100% - 96px) / 3);
+  cursor: pointer;
+  transition: box-shadow var(--transition-func);
+}
+.card-filter:hover,
+.card-filter:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.card-filter-link:hover .overlay,
+.card-filter-link:focus .overlay {
+  transform: translate(0, 0);
+}
+.work-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  padding: 40px 32px 0 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform var(--transition-func);
+  /* overflow-y: scroll; */
+  
+}
+.overlay-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+.text-filter-card {
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+}
+
+
+/*========================/FILTER====================*/
+
+
+
+/*========================/PAGE PORTFOLIO====================*/
+/*========================/PAGE PORTFOLIO====================*/
